@@ -6,7 +6,7 @@ pipeline {
                 docker { image 'bennun1docker/eido-task-15-11-22:latest' }
             }
             steps {
-                sh 'python3 main.py'
+                sh 'python main.py'
             }
     
         }
@@ -15,7 +15,7 @@ pipeline {
                 docker { image 'node:16.13.1-alpine' }
             }
             steps {
-                sh 'python main.py'
+                sh 'node --version'
             }
         }
         
